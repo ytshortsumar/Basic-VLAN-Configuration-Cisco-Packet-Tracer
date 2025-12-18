@@ -77,3 +77,47 @@ Configuration was saved using `write memory`.
 
 ### VLAN Verification
 Command used:
+
+Expected output:
+- VLAN 10 → Fa0/1, Fa0/2
+- VLAN 20 → Fa0/3, Fa0/4
+
+---
+
+### Connectivity Tests
+
+#### Same VLAN Communication
+- PC0 → PC1 ✔ (Success)
+- PC2 → PC3 ✔ (Success)
+
+#### Inter-VLAN Isolation Test
+- PC0 → PC2 ❌ (Request Timed Out)
+
+This confirms proper VLAN isolation.
+
+---
+
+## 📂 Files Included
+- `Basic VLAN Configuration.pkt` – Cisco Packet Tracer lab file
+- `README.md` – Project documentation
+
+---
+
+## 🧠 Key Learning Outcomes
+- VLAN creation and management
+- Logical network segmentation
+- Access port configuration
+- Security through traffic isolation
+- VLAN behavior without routing
+
+---
+
+## 🛠 Tools Used
+- Cisco Packet Tracer
+- Cisco 2960 Switch
+
+---
+
+## 👤 Author
+**Umar Farooq**  
+Networking Lab Assignment
